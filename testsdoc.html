@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body background="D:\Etg/dna.jpg">
+<form action="med.html">
+<label>Upload Medical and Test Reports:</label><br></br>
+  <input type="file" id="myFile" name="filename">
+  <input type="submit" onclick="doctor()" id="mybutton"></input type>
+</form>
+<script>
+function doctor(){
+		alert("Book your appointment");
+		document.getElementById("mybutton").onclick = function () {
+        location.href = "D:\Etg/med.html";
+    };
+	}
+	</script>
+</body>
+</html>

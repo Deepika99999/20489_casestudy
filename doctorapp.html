@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>doctor appointment</title>
+</head>
+<body background="D:\Etg/dna.jpg">
+
+	<div class="card">
+		      		<form method="post" action="docreg.html">
+			      		<div class="card-header"><h3><b>Doctor Schedule List</b></h3></div>
+			      		<div class="card-body">
+		      				<div class="table-responsive">
+		      					<table border="1" class="table table-striped table-bordered">
+		      						<tr>
+		      							<th>Doctor Name</th>
+		      							<th>Education</th>
+		      							<th>Speciality</th>
+		      							<th>Appointment Date</th>
+		      							<th>Appointment Day</th>
+		      							<th>Available Time</th>
+		      							<th>Action</th>
+		      						</tr>
+		      						
+		      							<tr>
+		      								<td>Aadhya</td>
+		      								<td>MBBS</td>
+		      								<td>Cardiologist</td>
+		      								<td>2021-09-29</td>
+		      								<td>Wednesday</td>
+		      								<td>10:00 - 16:00</td>
+		      								<td><button type="button" onclick="doctor()" name="get_appointment" class="btn btn-primary btn-sm get_appointment" id="mybutton">Get Appointment</button></td>
+		      							</tr>
+		      							
+		      							<tr>
+		      								<td>Dr. Peter Parker</td>
+		      								<td>MBBS MS</td>
+		      								<td>Sergen</td>
+		      								<td>2021-09-29</td>
+		      								<td>Wednesday</td>
+		      								<td>02:43 - 22:42</td>
+		      								<td><button type="button" onclick="doctor()" name="get_appointment" class="btn btn-primary btn-sm get_appointment" id="mybutton">Get Appointment</button></td>
+		      							</tr>
+		      							
+		      							<tr>
+		      								<td>Dr.Anirudh</td>
+		      								<td>Fscd Ms</td>
+		      								<td>ENT</td>
+		      								<td>2021-09-30</td>
+		      								<td>Thursday</td>
+		      								<td>02:26 - 22:21</td>
+		      								<td><button type="button" onclick="doctor()" name="get_appointment" class="btn btn-primary btn-sm get_appointment" id="mybutton">Get Appointment</button></td>
+		      							</tr>
+		      							
+		      							<tr>
+		      								<td>Dr.Nikhitha</td>
+		      								<td>MS MBBS</td>
+		      								<td>Dermatalogist</td>
+		      								<td>2021-09-30</td>
+		      								<td>Thursday</td>
+		      								<td>14:51 - 17:20</td>
+		      								<td><button type="button" onclick="doctor()" name="get_appointment" class="btn btn-primary btn-sm get_appointment" id="mybutton">Get Appointment</button></td>
+		      							</tr>
+		      							
+		      							<tr>
+		      								<td>Dr.parker</td>
+		      								<td>MBBS MSc</td>
+		      								<td>psychologist</td>
+		      								<td>2021-10-01</td>
+		      								<td>Friday</td>
+		      								<td>09:00 - 10:00</td>
+		      								<td><button type="button" onclick="doctor()" name="get_appointment" class="btn btn-primary btn-sm get_appointment" id="mybutton">Get Appointment</button></td>
+		      							</tr>
+		      							
+		      							<tr>
+		      								<td>Dr. Neha Parker</td>
+		      								<td>MBBS MSc</td>
+		      								<td>Neurologist</td>
+		      								<td>2021-10-01</td>
+		      								<td>Friday</td>
+		      								<td>09:00 - 10:00</td>
+		      								<td><button type="button" onclick="doctor()" name="get_appointment" class="btn btn-primary btn-sm get_appointment" id="mybutton">Get Appointment</button></td>
+		      							</tr>
+		      							
+		      							<tr>
+		      								<td>Dr. Peter Parker</td>
+		      								<td>MBBS MS</td>
+		      								<td>Sergen</td>
+		      								<td>2021-10-02</td>
+		      								<td>Saturday</td>
+		      								<td>09:00 - 23:00</td>
+		      								<td><button type="button" onclick="doctor()" name="get_appointment" class="btn btn-primary btn-sm get_appointment" id="mybutton">Get Appointment</button></td>
+		      							</tr>
+		      							
+		      							<tr>
+		      								<td>Dr. Peter Parker</td>
+		      								<td>MBBS MS</td>
+		      								<td>Sergen</td>
+		      								<td>2021-10-11</td>
+		      								<td>Monday</td>
+		      								<td>07:30 - 08:30</td>
+		      								<td><button type="button" onclick="doctor()"name="get_appointment" class="btn btn-primary btn-sm get_appointment" id="mybutton">Get Appointment</button></td>
+		      							</tr>
+		      							
+		      							<tr>
+		      								<td>abcd</td>
+		      								<td>ssss</td>
+		      								<td>sssss</td>
+		      								<td>2021-12-08</td>
+		      								<td>Wednesday</td>
+		      								<td>06:43 - 19:15</td>
+		      								<td><button type="button" onclick="doctor()" name="get_appointment" class="btn btn-primary btn-sm get_appointment"id="mybutton">Get Appointment</button></td>
+		      							</tr>
+		      									      					</table>
+		      				</div>
+		      			</div>
+		      		</form>
+		      	</div>
+		    
+
+			
+	    </div>
+		<script>
+		function doctor(){
+		alert("Book your appointment");
+		document.getElementById("mybutton").onclick = function () {
+        location.href = "file:///D:/Etg/docreg.html";
+    };
+		}
+		
+		
+		</script>
+		</body>
+		</html>

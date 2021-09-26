@@ -1,0 +1,92 @@
+<html>
+<head>consultation</head>
+<script>
+function validate(){
+document.getElementById("mybutton").onclick = function () {
+        location.href = "file:///D:/Etg/validslot.html";
+    };
+var fname=document.myform.fname.value;
+var lname=document.myform.lname.value;
+var email=document.myform.email.value;
+var adrs=document.myform.adrs.value;
+var city=document.myform.city.value;
+var mbno=document.myform.mbno.value;
+if(fname==null || fname==""){
+alert("name shouldn't be blank");
+document.myform.fname.focus();
+return false;
+}
+else if(lname==null || lname==""){
+alert("lname shouldn't be blank");
+document.myform.lname.focus();
+return false;
+}
+else if(email.length<6)
+{
+alert("email must have more than 6 characters");
+return false;
+}
+else if(Dno==null || Dno==""){
+alert("adress shouldn't be blank");
+
+return false;
+}
+else if(mbno==null || mbno==""){
+alert("please enter mobile no");
+return false;
+}
+}
+</script>
+
+
+<body background="D:\Etg/dna.jpg">
+<form name="myform"action="validslot.html">
+firstname:<input type="text" name="fname">
+lastname:<input type="text" name="lname"><br></br>
+email:<input type="email" name="email"><br></br>
+<label>Gender</label><br></br>
+<input type="radio" name="male"/>Male
+<input type="radio" name="Female"/>Female
+<input type="radio" name="Other"/>Other<br></br>
+Address:<input type="text"name="adrs"><br></br>
+City:<input type="text" name="city">
+State:<input type="text" name="state"><br></br>
+zipcode:<input type="text"name="zipcode"><br></br>
+mobileno:<input type="text" name="mbno"><br></br>
+DOB:<input type="date" name="DOB"><br></br>
+occupation:<input type="text"name="job"><br></br>
+
+<label for="appointment">Do you have doctor appointment:</label><br></br>
+<select name ="please select"id="please select">
+<option value="select" selected>select</option><br></br>
+<option value="Dr. fiona Nicolsan">Dr.fiona Nicolsan</option><br></br>
+<option value="Dr.stephen">Dr.stephen</option>
+<option value="Dr.srujitha">Dr.srujitha</option>
+<option value="Dr.Hemanth">Dr.Hemanth</option>
+<option value="Dr.saranya">Dr.saranya</option><br></br>
+</select><br></br>
+Medicareno:<input type="medicareno"name="mdno">
+refno:<input type="refno"name="refno"><br></br>
+healthfund:<input type="healthfund"name="hfund">
+membership:<input type="membership" name="mshipno"><br></br>
+<label>hospital cover</label><br></br>
+<input type="radio" name="yes"/>yes
+<input type="radio" name="no"/>no<br></br>
+<label>Have you had hospital cover for more than 12 months</label>
+<input type="radio" name="yes"/>yes
+<input type="radio" name="no"/>no<br></br>
+pensionno:<input type="text" name="penno"><br></br>
+<label>Account holder if patient is under 18 years of age:</label><br></br>
+parent name:<input type="text" name="pname"><br></br>
+parent medicare:<input type="text" name="pmedicare">
+parent refno:<input type="text" name="prefno"><br></br>
+parent address:<input type="text" name="padrs"><br></br>
+<label>pleas list serious illness,medications or allergies:</label><br></br>
+<input type="text" name="text" height="25",width="25"><br></br>
+<label>If work cover or Tac please provide that number:</label><br></br>
+<input type="text" name="tac"><br></br>
+<button type="button" onclick="validate()"id="mybutton">submit</button>
+
+</form>
+</body>
+</html>

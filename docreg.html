@@ -1,0 +1,22 @@
+<html>
+<head>
+<body background="D:\Etg/dna.jpg" align="center">
+<form action="doclogin.html">Register
+<br></br>
+username:<input type="text" name="name" required /><br></br>
+email:<input type="email" name="email" required /><br></br>
+password:<input type="password" name="password" /><br></br>
+<button type="register" onclick="register()" id="myreg">Register</button>
+</tr>
+</table>
+</form>
+</head>
+<script>
+		function register(){
+		alert("login");
+		document.getElementById("myreg").onclick = function () {
+        location.href = "file:///D:/Etg/doclogin.html";
+    };
+		}
+</body>
+</html>

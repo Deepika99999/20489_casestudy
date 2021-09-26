@@ -1,0 +1,27 @@
+<html>
+<head>
+<h1> Book your slot timming for appointment</h1>
+<body background="D:\Etg/dna.jpg">
+<form action="testsdoc.html">
+  <div>
+ User name: <input type="text" name="name" /><br></br>
+Doctor name:  <input type="text" name="doctor name" /><br></br>
+    <label for="appt-time">Choose an appointment time (opening hours 12:00 to 18:00): </label>
+    <input id="appt-time" type="time" name="appt-time"
+           min="12:00" max="18:00" required>
+    <span class="validity"></span>
+  </div>
+  <div>
+      <input type="submit" onclick="doctor()" id="mybutton" value="Submit form">
+  </div>
+</form>
+<script>
+function doctor(){
+		alert("Book your appointment");
+		document.getElementById("mybutton").onclick = function () {
+        location.href = "D:\Etg/testsdoc.html";
+    };
+	}
+	</script>
+</body>
+</html>
